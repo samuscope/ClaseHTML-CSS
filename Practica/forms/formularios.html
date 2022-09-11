@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--FORMULARIOS-->
+    <h1>MIRA EL FORMULARIO</h1>
+    <form action="">
+        <label for="nombre">
+            <span>Introduzca su nombre</span>
+            <input type="text" id="nombre" placeholder="Nombre" />
+        </label>
+        <div></div>
+        <label for="fecha-nombre">
+            <span>Introduzca una fecha de inicio</span>
+            <input type="date" id="fecha-nombre" />
+        </label>
+        <div></div>
+        <label for="horario">
+            <span>Introduzca horario preferido</span>
+            <input type="time" id="horario" />
+        </label>
+        <div></div>
+            <input type="submit">
+    </form>
+
+    <div>
+        <!--Formulario tipo Calendario-->
+        <h2>Formulario tipo Calendario</h2>
+        <form action="">
+            <label for="hora">
+                <span>Hora</span>
+                <input type="time" id="hora" name="hora" />
+            </label>
+            <div></div>
+            <label for="dia">
+                <span>Día</span>
+                <input type="date" id="dia" name="dia" />
+            </label>
+            <div></div>
+            <label for="semana">
+                <span>Semana</span>
+                <input type="week" id="semana" name="semana" />
+            </label>
+            <label for="mes">
+                <span>Semana</span>
+                <input type="month" id="mes" name="mes" />
+            </label>
+            <div></div>
+            <input type="submit">
+        </form>
+
+        <!--OTRO TIPO DE FORMULARIO CALENDARIO-->
+        <h2>Formulario tipo calendario Compacto</h2>
+        <form action="">
+            <label for="calendario">
+                <span>Calendario</span>
+                <input type="datetime-local" id="calendario" name="calendario" />
+            </label>
+            <div></div>
+            <input type="submit">
+        </form>
+
+        <!--OTRO FORMULARIO AUTOCOMPLETAR-->
+        <h2>Formulario con Autocompletar</h2>
+        <form action="">
+            <label for="nombre">
+                <span>Cual es tu nombre?</span>
+                <input type="text" name="nombre" id="nonbre" autocomplete="name" required />
+            </label>
+            <div></div>
+            <label for="correo">
+                <span>Cual es tu correo?</span>
+                <input type="email" name="correo" id="correo" autocomplete="email" />
+            </label>
+            <div></div>
+            <label for="pais">
+                <span>Cual es tu pais?</span>
+                <input type="text" name="pais" id="pais" autocomplete="country" />
+            </label>
+            <div></div>
+            <label for="cp">
+                <span>Cual es tu codigo postal?</span>
+                <input type="text" name="cp" id="cp" autocomplete="postal-code" />
+            </label>
+            <div></div>
+          
+            <h2>Etiquetas Select</h2>
+            <!--ETIQUETA SELECT-->
+            <select name="cursos" id="cursos" >
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML5">HTML5</option>
+                <option value="CSS3">CSS3</option>
+            </select>
+            <div></div>
+
+            <!--ETIQUETA SELECT CON BUSQUEDA-->
+            <input list="cursos2">
+            <datalist id="cursos2">
+                <option value="JavaScript2">JavaScript2</option>
+                <option value="HTML5-2">HTML5-2</option>
+                <option value="CSS3-2">CSS3-2</option>
+            </datalist>
+            </input>
+            <div></div>
+            <input type="submit">
+        </form>
+
+        <section>
+            <p></p>
+            <a href="../index.html">Regresar</a>
+        </section>
+</body>
+
+</html>
